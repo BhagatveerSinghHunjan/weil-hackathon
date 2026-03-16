@@ -1,0 +1,26 @@
+record StartupEvaluation {
+    decision: string,
+    score: f64,
+    financial_score: f64,
+    business_score: f64,
+    scalability_score: f64,
+    market_score: f64,
+    moat_score: f64,
+    sector_score: f64,
+    sector: string
+}
+
+@mcp
+interface ChainVestMCP {
+    // Evaluate startup health from latest revenue, burn, and cash snapshot.
+    query func evaluate_startup(
+        // latest recurring or monthly revenue
+        revenue: f64,
+        // current monthly burn rate
+        burn: f64,
+        // current cash reserves
+        cash: f64,
+        // short description of business model, customer, and market
+        business_description: string
+    ) -> StartupEvaluation
+}

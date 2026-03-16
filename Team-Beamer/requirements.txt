@@ -1,0 +1,10 @@
+langgraph
+langchain
+pydantic
+streamlit
+matplotlib
+fastapi
+uvicorn
+fastmcp
+weil-wallet @ git+https://github.com/weilliptic-public/wadk.git#subdirectory=adk/python/weil_wallet
+weil-ai @ git+https://github.com/weilliptic-public/wadk.git#subdirectory=adk/python/weil_ai

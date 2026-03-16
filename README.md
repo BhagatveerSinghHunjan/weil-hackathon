@@ -53,7 +53,25 @@ Your PR **description** should include:
 Short description of the project
 Instructions to run or test the project (if applicable)
 
+# ChainVest – Team Beamer
 
+## Short Description
+ChainVest is an AI-powered risk evaluation system for startup investments. 
+It analyzes startup data and generates funding recommendations using AI agents and blockchain-backed validation.
+
+## How to Run
+
+1. Install dependencies:
+pip install -r requirements.txt
+
+2. Run server:
+uvicorn api:app --reload
+
+3. Test endpoint:
+POST /analyze
+
+## Assets Included
+Backend code, UI, workflow diagram, documentation.
 
 
 
